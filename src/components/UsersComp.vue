@@ -1,7 +1,5 @@
 <template>
     <div class="container">
-
-
         <div v-if="users.length > 0" class="tables-container">
             <div class="users-section">
                 <div class="container-header">
@@ -11,7 +9,6 @@
                         <button type="submit">Добавить</button>
                     </form>
                 </div>
-
                 <div class="table-wrapper">
                     <table class="user-table">
                         <thead>
@@ -38,9 +35,7 @@
                     </table>
                 </div>
             </div>
-
             <div class="checks-section">
-
                 <div class="container-header">
                     <h2>Чеки </h2>
                     <button v-if="selectedUser !== null" @click="dialogInputSum = true">Добавить чек</button>
@@ -64,7 +59,6 @@
             </div>
         </div>
         <p v-else>Пользователи не найдены.</p>
-
         <DialogInputComp v-model="dialogInputSum" :confirm="addCheck" />
     </div>
 </template>
