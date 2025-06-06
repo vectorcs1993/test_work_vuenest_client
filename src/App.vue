@@ -1,9 +1,9 @@
 <template>
-  <MainPage />
+  <Users />
 </template>
 
 <script setup>
-import MainPage from './pages/MainPage.vue'
+import Users from './components/UsersComp.vue'
 
 </script>
 
